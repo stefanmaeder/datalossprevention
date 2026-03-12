@@ -1,10 +1,10 @@
 # Dienste mit TLS
 
 - generisch für beliebige Client/Server‑Anwendungen über einem zuverlässigen Transport:
-  - Web‑Dienste (HTTP)
-  - E‑Mail‑Dienste (IMAP, POP3, SMTP)
-  - Echtzeit‑Dienste (Messaging, VoIP)
-  - VPN‑artige und Anwendungs‑VPN‑Szenarien
+    - Web‑Dienste (HTTP)
+    - E‑Mail‑Dienste (IMAP, POP3, SMTP)
+    - Echtzeit‑Dienste (Messaging, VoIP)
+    - VPN‑artige und Anwendungs‑VPN‑Szenarien
 
 - RFC 2246 führt im Glossar „application protocol“ als jedes Protokoll auf, das typischerweise direkt über dem Transportlayer läuft, und nennt beispielhaft Protokolle wie Telnet, FTP, HTTP und SMTP, die durch TLS abgesichert werden können.
 ​
