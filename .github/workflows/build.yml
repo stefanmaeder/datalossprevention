@@ -1,0 +1,42 @@
+name: Build Slides
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Combine Markdown
+        run: |
+          rm -f slides/slides.md
+          first=true
+          for file in slides/[0-9]*.md; do
+            
+            if [ "$first" = false ]; then
+              echo -e "\n\n---\n\n" >> slides/slides.md
+            fi
+            cat "$file" >> slides/slides.md
+            first=false
+          done
+
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: slides
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/deploy-pages@v4
