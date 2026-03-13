@@ -1,4 +1,4 @@
-# Grundlagen: TLS Überblick
+# TLS Überblick
 
 - Transport Layer Security (TLS) bzw. Vorgänger Secure Sockets Layer (SSL)
 - Verschlüsselungsprotokoll zur sicheren Datenübertragung im Internet
