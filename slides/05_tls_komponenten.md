@@ -3,6 +3,7 @@
 - TLS Record Protocol
     - fragmentiert, optional komprimiert, authentifiziert (MAC) und verschlüsselt Anwendungsdaten, bevor sie gesendet werden
 - TLS Handshake Protocol
+    - initiale Prozess zum Aufbau einer sicheren, verschlüsselten Verbindung zwischen Client (z. B. Browser) und Server
 - Change Cipher Spec Protocol
     - signalisiert den Wechsel vom unverschlüsselten in den verschlüsselten Zustand (bzw. zwischen Cipher‑Spezifikationen)
 - Alert Protocol
